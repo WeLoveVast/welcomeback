@@ -1,0 +1,202 @@
+getgenv().Settings = {
+    ["AutoParry"] = {
+        Enabled = true,
+        Debug = true,
+
+        ["Intro"] = {
+            Enabled = false, -- useless as of rn, because it will be paid later haha.. cheap tho
+        },
+
+        ["Main"] = {
+            Range = 10.5,
+            Delay = 0, 
+            Chance = 100,
+            RandomChance = false,
+            Method = "Sound", -- Sound // Animation NOW ANIMATION IMPROVES OVER TIME USING IT!
+            CheckIfLooking = false,
+            Threshold = 0.2, --
+        },
+
+        ["Aimbot"] = {
+            Enabled = false,
+            Keybind = "LeftAlt",
+            Hold = true,
+            Hitpart = "Head",
+            X = 0.01,
+            Y = 0.01,
+        },
+
+        ["Miscellaneous"] = {
+            HitBoxExpander = true,
+            ShowHBE = false,
+            ShowRange = {
+                Enabled = true,
+
+                Options = { 
+                    Anti = true,
+                    AntiColor = Color3.fromRGB(245, 245, 245),
+                    Parry = true,
+                    ParryColor = Color3.fromRGB(218, 87, 218),
+              }
+            },
+
+            AntiAim = {
+                Enabled = false,
+                Frequency = 0.0003,
+            },
+
+            UnlockFPS = {
+                Enabled = false,
+                FPScap = 144,
+            },
+        },
+
+        ["Anti"] = {
+            Enabled = true, 
+            Delay = 0.42,
+            Range = 50,
+        },
+
+        ["Big"] = {
+            Options = {
+                Head = false,
+                Torso = false,
+                HSize = 5.7, 
+                TSize = 5.7,
+            }
+        },
+
+        ["Alternative"] = {
+            AltBypass = false, 
+            KDR = 1.5, 
+        },
+
+        ["Mistake"] = {
+            Enabled = false,
+            Range = 2,
+            Chance = 0.5,
+        },
+
+        ["Custom"] = {
+            Enabled = false,
+
+            Options = {
+                Hit = "TF2", -- TF2 // Damn // ClashR // Rust // Bozo // CSGO // Boink // Fart // Rage
+                Parry = "RUST", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Kill = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Explosive = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Nuke = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Dash = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+            },
+        },
+
+        ["ESP"] = {
+            Enabled = false, -- dont use if ur pc is buns
+            
+            Options = {
+                Name = {
+                    Enabled = true,
+                    OutLine = true,
+                    Color = Color3.fromRGB(168, 125, 210)
+                }, 
+                
+                HealthBar = {
+                    Enabled = true,
+                    OutLine = true,
+                    Color = Color3.fromRGB(0, 255, 0)
+                }, 
+                
+                HealthText = {
+                    Enabled = true,
+                    OutLine = true,
+                    Color = Color3.fromRGB(0, 255, 0)
+                }, 
+                
+                Distance = {
+                    Enabled = true,
+                    OutLine = true,
+                    Color = Color3.fromRGB(195, 170, 252)
+                }
+            }
+        },
+
+        ["World"] = {
+            Enabled = true,
+
+            Options = { 
+                Skyboxes = {
+                    Enabled = true,
+                    Skybox = "Nebula" -- Nebula // VaporWave // Clouds // Twilight
+                }, 
+                
+                Fog = {  
+                    Enabled = true,
+                    Density = 0.54,
+                    Glare = 2,
+                    Haze = 5,
+                    Color = Color3.fromRGB(169, 124, 188)
+                }, 
+
+                Weapon = {
+                    Enabled = true, -- must re equip when spawning, WONT work on weapons like fire axe since they use custom meshes instead of the default ones
+                    Material = "Neon",
+                    Color = Color3.fromRGB(65, 172, 177),
+                },
+
+                Fake = {
+                    Enabled = true,
+
+                    Options = {
+                        Headless = true,
+                    },
+                },
+
+                Colors = {
+                    Enabled = true,
+
+                    Options = {
+                        Stamina = {
+                            Enabled = true,
+                            Trail = Color3.fromRGB(137, 119, 228),
+                            Bar = Color3.fromRGB(187, 94, 212),
+                            Background = Color3.fromRGB(160, 86, 181),
+                            InnerBackground = Color3.fromRGB(199, 170, 192),
+                        },
+
+                        Crosshairs = {
+                            Enabled = true,
+                            Crosshair =  Color3.fromRGB(144, 158, 236),
+                        },
+
+                        Shield = {
+                            Enabled = true,
+                            Color = Color3.fromRGB(255, 96, 252),
+                        },
+
+                        Bubbles = {
+                            Enabled = true,
+                            Color = Color3.fromRGB(255, 96, 252),
+                        },
+
+                        KillStreak = {
+                            Enabled = true,
+                            Color = Color3.fromRGB(211, 130, 210),
+                        },
+                    },
+                },
+            },
+        },
+
+        ["Panic"] = {
+            Enabled = false,
+            Keybind = "L",
+            
+            HoldMode = {
+                Enabled = false, 
+                Keybind = "C", -- basically only triggers autoparry when it is hold
+            },
+        },
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/welcomeback/refs/heads/main/update"))()
