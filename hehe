@@ -1,7 +1,8 @@
 getgenv().Settings = {
     ["AutoParry"] = {
         Enabled = true,
-        Debug = true,
+        Debug = false,
+        Notification = true, 
 
         ["Intro"] = {
             Enabled = false, -- useless as of rn, because it will be paid later haha.. cheap tho
@@ -29,8 +30,9 @@ getgenv().Settings = {
         ["Miscellaneous"] = {
             HitBoxExpander = true,
             ShowHBE = false,
+
             ShowRange = {
-                Enabled = true,
+                Enabled = false,
 
                 Options = { 
                     Anti = true,
@@ -61,7 +63,7 @@ getgenv().Settings = {
             Options = {
                 Head = false,
                 Torso = false,
-                HSize = 5.7, 
+                HSize = 5.7, -- anything bigger than 10 could ban you
                 TSize = 5.7,
             }
         },
@@ -91,7 +93,7 @@ getgenv().Settings = {
         },
 
         ["ESP"] = {
-            Enabled = false, -- dont use if ur pc is buns
+            Enabled = false,
             
             Options = {
                 Name = {
@@ -121,7 +123,7 @@ getgenv().Settings = {
         },
 
         ["World"] = {
-            Enabled = true,
+            Enabled = false,
 
             Options = { 
                 Skyboxes = {
