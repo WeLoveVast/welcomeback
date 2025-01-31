@@ -2,18 +2,17 @@ getgenv().Settings = {
     ["AutoParry"] = {
         Enabled = true,
         Debug = false,
-        Notification = true, 
 
         ["Intro"] = {
-            Enabled = false, -- useless as of rn, because it will be paid later haha.. cheap tho
+            Enabled = true, -- useless as of rn, because it will be paid later haha.. cheap tho
         },
 
         ["Main"] = {
-            Range = 10.5,
-            Delay = 0, 
+            Range = 12.5,
+            Delay = 0.06, 
             Chance = 100,
             RandomChance = false,
-            Method = "Sound", -- Sound // Animation NOW ANIMATION IMPROVES OVER TIME USING IT!
+            Method = "Sound", -- Sound // Animation NOW ANIMATION IMPROVES OVER TIME BY USING IT!
             CheckIfLooking = false,
             Threshold = 0.2, --
         },
@@ -29,10 +28,10 @@ getgenv().Settings = {
 
         ["Miscellaneous"] = {
             HitBoxExpander = true,
-            ShowHBE = false,
+            ShowHBE = true,
 
             ShowRange = {
-                Enabled = false,
+                Enabled = true,
 
                 Options = { 
                     Anti = true,
@@ -61,7 +60,7 @@ getgenv().Settings = {
 
         ["Big"] = {
             Options = {
-                Head = false,
+                Head = true,
                 Torso = false,
                 HSize = 5.7, -- anything bigger than 10 could ban you
                 TSize = 5.7,
@@ -80,7 +79,7 @@ getgenv().Settings = {
         },
 
         ["Custom"] = {
-            Enabled = false,
+            Enabled = true,
 
             Options = {
                 Hit = "TF2", -- TF2 // Damn // ClashR // Rust // Bozo // CSGO // Boink // Fart // Rage
@@ -123,7 +122,7 @@ getgenv().Settings = {
         },
 
         ["World"] = {
-            Enabled = false,
+            Enabled = true,
 
             Options = { 
                 Skyboxes = {
