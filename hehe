@@ -1,187 +1,191 @@
 getgenv().Settings = {
     ["AutoParry"] = {
-        Enabled = true,
-        Debug = false,
+        ["Enabled"] = true,
+        ["Debug"] = false,
 
         ["Intro"] = {
-            Enabled = true, -- useless as of rn, because it will be paid later haha.. cheap tho
+            ["Enabled"] = true, -- A little taste of the paid version??
         },
 
         ["Main"] = {
-            Range = 12.5,
-            Delay = 0.06, 
-            Chance = 100,
-            RandomChance = false,
-            Method = "Sound", -- Sound // Animation NOW ANIMATION IMPROVES OVER TIME BY USING IT!
-            CheckIfLooking = false,
-            Threshold = 0.2, --
+            ["Range"] = 12.5,
+            ["Delay"] = 0,
+            ["Chance"] = 100,
+            ["RandomChance"] = false,
+            ["Method"] = "Animation", -- Sound // Animation NOW BOTH ARE SUPER GOOD
+            ["CheckIfLooking"] = false, -- Recommended for Animation
+            ["Threshold"] = 0.2, 
         },
 
         ["Aimbot"] = {
-            Enabled = false,
-            Keybind = "LeftAlt",
-            Hold = true,
-            Hitpart = "Head",
-            X = 0.01,
-            Y = 0.01,
+            ["Enabled"] = false,
+            ["Keybind"] = "LeftAlt",
+            ["Hold"] = true,
+            ["Hitpart"] = "Head",
+            ["X"] = 10, -- Division method
+            ["Y"] = 10,
         },
 
         ["Miscellaneous"] = {
-            HitBoxExpander = true,
-            ShowHBE = true,
-
-            ShowRange = {
-                Enabled = true,
-
-                Options = { 
-                    Anti = true,
-                    AntiColor = Color3.fromRGB(245, 245, 245),
-                    Parry = true,
-                    ParryColor = Color3.fromRGB(218, 87, 218),
-              }
+            ["ShowRange"] = {
+                ["Enabled"] = false,
+                ["Options"] = { 
+                    ["Anti"] = false,
+                    ["AntiColor"] = Color3.fromRGB(245, 245, 245),
+                    ["Parry"] = false,
+                    ["ParryColor"] = Color3.fromRGB(218, 87, 218),
+              },
             },
 
-            AntiAim = {
-                Enabled = false,
-                Frequency = 0.0003,
+            ["AntiAim"] = {
+                ["Enabled"] = false,
+                ["Frequency"] = 0.0003,
             },
 
-            UnlockFPS = {
-                Enabled = false,
-                FPScap = 144,
+            ["UnlockFPS"] = {
+                ["Enabled"] = false,
+                ["FPScap"] = 144,
             },
         },
 
         ["Anti"] = {
-            Enabled = true, 
-            Delay = 0.42,
-            Range = 50,
+            ["Enabled"] = true,
+            ["Options"] = {
+                ["Delay"] = 0.42, 
+                ["Range"] = 50,
+                ["Chance"] = 100,
+            }, 
         },
 
         ["Big"] = {
-            Options = {
-                Head = true,
-                Torso = false,
-                HSize = 5.7, -- anything bigger than 10 could ban you
-                TSize = 5.7,
-            }
+            ["Options"] = {
+                ["Head"] = false,
+                ["Torso"] = false,
+                ["HSize"] = 5.7, 
+                ["TSize"] = 5.7,
+            },
+        },
+
+        ["Hitbox"] = {
+            ["Enabled"] = true,
+            ["Options"] = {
+                ["Visualize"] = false,
+                ["Method"] = "Semi-Legit", -- Rage / Semi-Rage / Semi-Legit / Legit
+            },
         },
 
         ["Alternative"] = {
-            AltBypass = false, 
-            KDR = 1.5, 
+            ["Enabled"] = false, 
+            ["KDR"] = 1.5, 
         },
 
         ["Mistake"] = {
-            Enabled = false,
-            Range = 2,
-            Chance = 0.5,
+            ["Enabled"] = false,
+            ["Range"] = 2,
+            ["Chance"] = 0.5,
         },
 
         ["Custom"] = {
-            Enabled = true,
-
-            Options = {
-                Hit = "TF2", -- TF2 // Damn // ClashR // Rust // Bozo // CSGO // Boink // Fart // Rage
-                Parry = "RUST", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Kill = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Explosive = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Nuke = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Dash = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+            ["Enabled"] = false,  -- Version (522) and further
+            ["Options"] = {
+                ["Hit"] = "TF2", -- TF2 // Damn // ClashR // Rust // Bozo // CSGO // Boink // Fart // Rage
+                ["Parry"] = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Kill"] = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Explosive"] = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Nuke"] = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Dash"] = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Heal"] = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
             },
         },
 
         ["ESP"] = {
-            Enabled = false,
-            
-            Options = {
-                Name = {
-                    Enabled = true,
-                    OutLine = true,
-                    Color = Color3.fromRGB(168, 125, 210)
+            ["Enabled"] = false, -- leave this off if your pc is buns
+            ["Options"] = {
+                ["Name"] = {
+                    ["Enabled"] = false,
+                    ["OutLine"] = false,
+                    ["Color"] = Color3.fromRGB(168, 125, 210)
                 }, 
                 
-                HealthBar = {
-                    Enabled = true,
-                    OutLine = true,
-                    Color = Color3.fromRGB(0, 255, 0)
+                ["HealthBar"] = {
+                    ["Enabled"] = false,
+                    ["OutLine"] = false,
+                    ["Color"] = Color3.fromRGB(0, 255, 0)
                 }, 
                 
-                HealthText = {
-                    Enabled = true,
-                    OutLine = true,
-                    Color = Color3.fromRGB(0, 255, 0)
+                ["HealthText"] = {
+                    ["Enabled"] = false,
+                    ["OutLine"] = false,
+                    ["Color"] = Color3.fromRGB(0, 255, 0)
                 }, 
                 
-                Distance = {
-                    Enabled = true,
-                    OutLine = true,
-                    Color = Color3.fromRGB(195, 170, 252)
-                }
-            }
+                ["Distance"] = {
+                    ["Enabled"] = false,
+                    ["OutLine"] = false,
+                    ["Color"] = Color3.fromRGB(195, 170, 252)
+                },
+            },
         },
 
         ["World"] = {
-            Enabled = true,
-
-            Options = { 
-                Skyboxes = {
-                    Enabled = true,
-                    Skybox = "Nebula" -- Nebula // VaporWave // Clouds // Twilight
+            ["Enabled"] = false,
+            ["Options"] = { 
+                ["Skyboxes"] = {
+                    ["Enabled"] = false,
+                    ["Skybox"] = "Nebula" -- Nebula // VaporWave // Clouds // Twilight (classics on every script)
                 }, 
                 
-                Fog = {  
-                    Enabled = true,
-                    Density = 0.54,
-                    Glare = 2,
-                    Haze = 5,
-                    Color = Color3.fromRGB(169, 124, 188)
+                ["Fog"] = {  
+                    ["Enabled"] = false,
+                    ["Density"] = 0.54,
+                    ["Glare"] = 2,
+                    ["Haze"] = 5,
+                    ["Color"] = Color3.fromRGB(169, 124, 188)
                 }, 
 
-                Weapon = {
-                    Enabled = true, -- must re equip when spawning, WONT work on weapons like fire axe since they use custom meshes instead of the default ones
-                    Material = "Neon",
-                    Color = Color3.fromRGB(65, 172, 177),
+                ["Weapon"] = {
+                    ["Enabled"] = false, -- Re Equip everytime to see changes
+                    ["Material"] = "Neon",
+                    ["Color"] = Color3.fromRGB(65, 172, 177),
                 },
 
-                Fake = {
-                    Enabled = true,
+                ["Fake"] = {
+                    ["Enabled"] = false,
 
-                    Options = {
-                        Headless = true,
+                    ["Options"] = {
+                        ["Headless"] = false,
                     },
                 },
 
-                Colors = {
-                    Enabled = true,
-
-                    Options = {
-                        Stamina = {
-                            Enabled = true,
-                            Trail = Color3.fromRGB(137, 119, 228),
-                            Bar = Color3.fromRGB(187, 94, 212),
-                            Background = Color3.fromRGB(160, 86, 181),
-                            InnerBackground = Color3.fromRGB(199, 170, 192),
+                ["Colors"] = {
+                    ["Enabled"] = false,
+                    ["Options"] = {
+                        ["Stamina"] = {
+                            ["Enabled"] = false,
+                            ["Trail"] = Color3.fromRGB(137, 119, 228),
+                            ["Bar"] = Color3.fromRGB(187, 94, 212),
+                            ["Background"] = Color3.fromRGB(160, 86, 181),
+                            ["InnerBackground"] = Color3.fromRGB(199, 170, 192),
                         },
 
-                        Crosshairs = {
-                            Enabled = true,
-                            Crosshair =  Color3.fromRGB(144, 158, 236),
+                        ["Crosshairs"] = {
+                            ["Enabled"] = false,
+                            ["Crosshair"] =  Color3.fromRGB(144, 158, 236),
                         },
 
-                        Shield = {
-                            Enabled = true,
-                            Color = Color3.fromRGB(255, 96, 252),
+                        ["Shield"] = {
+                            ["Enabled"] = false,
+                            ["Color"] = Color3.fromRGB(255, 96, 252),
                         },
 
-                        Bubbles = {
-                            Enabled = true,
-                            Color = Color3.fromRGB(255, 96, 252),
+                        ["Bubbles"] = {
+                            ["Enabled"] = false,
+                            ["Color"] = Color3.fromRGB(255, 96, 252),
                         },
 
-                        KillStreak = {
-                            Enabled = true,
-                            Color = Color3.fromRGB(211, 130, 210),
+                        ["KillStreak"] = {
+                            ["Enabled"] = false,
+                            ["Color"] = Color3.fromRGB(211, 130, 210),
                         },
                     },
                 },
@@ -189,12 +193,11 @@ getgenv().Settings = {
         },
 
         ["Panic"] = {
-            Enabled = false,
-            Keybind = "L",
-            
-            HoldMode = {
-                Enabled = false, 
-                Keybind = "C", -- basically only triggers autoparry when it is hold
+            ["Enabled"] = true,
+            ["Keybind"] = "L",          
+            ["HoldMode"] = {
+                ["Enabled"] = false, 
+                ["Keybind"] = "C", 
             },
         },
     },
