@@ -1,20 +1,20 @@
 getgenv().Settings = {
     ["AutoParry"] = {
         ["Enabled"] = true,
-        ["Debug"] = false,
+        ["Debug"] = true,
 
         ["Intro"] = {
-            ["Enabled"] = true, -- A little taste of the paid version??
+            ["Enabled"] = true, -- useless as of rn, because it will be paid later haha.. cheap tho
         },
 
         ["Main"] = {
-            ["Range"] = 12.5,
+            ["Range"] = 11.5,
             ["Delay"] = 0,
             ["Chance"] = 100,
             ["RandomChance"] = false,
-            ["Method"] = "Animation", -- Sound // Animation NOW BOTH ARE SUPER GOOD
-            ["CheckIfLooking"] = false, -- Recommended for Animation
-            ["Threshold"] = 0.2, 
+            ["Method"] = "Animation", -- Sound // Animation 
+            ["CheckIfLooking"] = true,
+            ["Threshold"] = 0.045, 
         },
 
         ["Aimbot"] = {
@@ -22,17 +22,17 @@ getgenv().Settings = {
             ["Keybind"] = "LeftAlt",
             ["Hold"] = true,
             ["Hitpart"] = "Head",
-            ["X"] = 10, -- Division method
+            ["X"] = 10, 
             ["Y"] = 10,
         },
 
         ["Miscellaneous"] = {
             ["ShowRange"] = {
-                ["Enabled"] = false,
+                ["Enabled"] = true,
                 ["Options"] = { 
-                    ["Anti"] = false,
+                    ["Anti"] = true,
                     ["AntiColor"] = Color3.fromRGB(245, 245, 245),
-                    ["Parry"] = false,
+                    ["Parry"] = true,
                     ["ParryColor"] = Color3.fromRGB(218, 87, 218),
               },
             },
@@ -99,29 +99,29 @@ getgenv().Settings = {
         },
 
         ["ESP"] = {
-            ["Enabled"] = false, -- leave this off if your pc is buns
+            ["Enabled"] = false, -- Do not use if you have low FPS
             ["Options"] = {
                 ["Name"] = {
-                    ["Enabled"] = false,
-                    ["OutLine"] = false,
+                    ["Enabled"] = true,
+                    ["OutLine"] = true,
                     ["Color"] = Color3.fromRGB(168, 125, 210)
                 }, 
                 
                 ["HealthBar"] = {
-                    ["Enabled"] = false,
-                    ["OutLine"] = false,
+                    ["Enabled"] = true,
+                    ["OutLine"] = true,
                     ["Color"] = Color3.fromRGB(0, 255, 0)
                 }, 
                 
                 ["HealthText"] = {
-                    ["Enabled"] = false,
-                    ["OutLine"] = false,
+                    ["Enabled"] = true,
+                    ["OutLine"] = true,
                     ["Color"] = Color3.fromRGB(0, 255, 0)
                 }, 
                 
                 ["Distance"] = {
-                    ["Enabled"] = false,
-                    ["OutLine"] = false,
+                    ["Enabled"] = true,
+                    ["OutLine"] = true,
                     ["Color"] = Color3.fromRGB(195, 170, 252)
                 },
             },
@@ -131,12 +131,12 @@ getgenv().Settings = {
             ["Enabled"] = false,
             ["Options"] = { 
                 ["Skyboxes"] = {
-                    ["Enabled"] = false,
-                    ["Skybox"] = "Nebula" -- Nebula // VaporWave // Clouds // Twilight (classics on every script)
+                    ["Enabled"] = true,
+                    ["Skybox"] = "Nebula" -- Nebula // VaporWave // Clouds // Twilight
                 }, 
                 
                 ["Fog"] = {  
-                    ["Enabled"] = false,
+                    ["Enabled"] = true,
                     ["Density"] = 0.54,
                     ["Glare"] = 2,
                     ["Haze"] = 5,
@@ -144,24 +144,23 @@ getgenv().Settings = {
                 }, 
 
                 ["Weapon"] = {
-                    ["Enabled"] = false, -- Re Equip everytime to see changes
+                    ["Enabled"] = true, -- must re equip when spawning, WONT work on weapons like fire axe since they use custom meshes instead of the default ones
                     ["Material"] = "Neon",
                     ["Color"] = Color3.fromRGB(65, 172, 177),
                 },
 
                 ["Fake"] = {
-                    ["Enabled"] = false,
-
+                    ["Enabled"] = true,
                     ["Options"] = {
-                        ["Headless"] = false,
+                        ["Headless"] = true,
                     },
                 },
 
                 ["Colors"] = {
-                    ["Enabled"] = false,
+                    ["Enabled"] = true,
                     ["Options"] = {
                         ["Stamina"] = {
-                            ["Enabled"] = false,
+                            ["Enabled"] = true,
                             ["Trail"] = Color3.fromRGB(137, 119, 228),
                             ["Bar"] = Color3.fromRGB(187, 94, 212),
                             ["Background"] = Color3.fromRGB(160, 86, 181),
@@ -169,22 +168,22 @@ getgenv().Settings = {
                         },
 
                         ["Crosshairs"] = {
-                            ["Enabled"] = false,
+                            ["Enabled"] = true,
                             ["Crosshair"] =  Color3.fromRGB(144, 158, 236),
                         },
 
                         ["Shield"] = {
-                            ["Enabled"] = false,
+                            ["Enabled"] = true,
                             ["Color"] = Color3.fromRGB(255, 96, 252),
                         },
 
                         ["Bubbles"] = {
-                            ["Enabled"] = false,
+                            ["Enabled"] = true,
                             ["Color"] = Color3.fromRGB(255, 96, 252),
                         },
 
                         ["KillStreak"] = {
-                            ["Enabled"] = false,
+                            ["Enabled"] = true,
                             ["Color"] = Color3.fromRGB(211, 130, 210),
                         },
                     },
@@ -193,11 +192,12 @@ getgenv().Settings = {
         },
 
         ["Panic"] = {
-            ["Enabled"] = true,
-            ["Keybind"] = "L",          
-            ["HoldMode"] = {
+            ["Enabled"] = false,
+            ["Keybind"] = "P",
+
+            ["Hold"] = {
                 ["Enabled"] = false, 
-                ["Keybind"] = "C", 
+                ["Keybind"] = "V", -- basically only enables autoparry when its hold
             },
         },
     },
