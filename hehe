@@ -12,8 +12,8 @@ getgenv().Settings = {
             ["Delay"] = 0,
             ["Chance"] = 100,
             ["RandomChance"] = false,
-            ["Method"] = "Animation", -- Sound // Animation 
-            ["CheckIfLooking"] = true,
+            ["Method"] = "Animation", -- Sound // Animation is now better
+            ["CheckIfLooking"] = false,
             ["Threshold"] = 0.045, 
         },
 
@@ -53,7 +53,6 @@ getgenv().Settings = {
             ["Options"] = {
                 ["Delay"] = 0.42, 
                 ["Range"] = 50,
-                ["Chance"] = 100,
             }, 
         },
 
@@ -70,7 +69,7 @@ getgenv().Settings = {
             ["Enabled"] = true,
             ["Options"] = {
                 ["Visualize"] = false,
-                ["Method"] = "Semi-Legit", -- Rage / Semi-Rage / Semi-Legit / Legit
+                ["Method"] = "Rage", -- Rage / Semi-Rage / Semi-Legit / Legit
             },
         },
 
@@ -151,6 +150,7 @@ getgenv().Settings = {
 
                 ["Fake"] = {
                     ["Enabled"] = true,
+
                     ["Options"] = {
                         ["Headless"] = true,
                     },
@@ -193,7 +193,7 @@ getgenv().Settings = {
 
         ["Panic"] = {
             ["Enabled"] = false,
-            ["Keybind"] = "P",
+            ["Keybind"] = "P", -- this doesnt check chat, so yeah... i forgot
 
             ["Hold"] = {
                 ["Enabled"] = false, 
