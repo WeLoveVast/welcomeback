@@ -12,7 +12,7 @@ getgenv().Settings = {
             ["Delay"] = 0,
             ["Chance"] = 100,
             ["RandomChance"] = false,
-            ["Method"] = "Animation", -- Sound // Animation is now better
+            ["Method"] = "Animation", -- Sound // Animation 
             ["CheckIfLooking"] = false,
             ["Threshold"] = 0.045, 
         },
@@ -68,8 +68,8 @@ getgenv().Settings = {
         ["Hitbox"] = {
             ["Enabled"] = true,
             ["Options"] = {
-                ["Visualize"] = false,
-                ["Method"] = "Rage", -- Rage / Semi-Rage / Semi-Legit / Legit
+                ["Visualize"] = true,
+                ["Method"] = "RAGE", -- RAGE / Semi-RAGE / Semi-Legit / Legit
             },
         },
 
@@ -85,15 +85,16 @@ getgenv().Settings = {
         },
 
         ["Custom"] = {
-            ["Enabled"] = false,  -- Version (522) and further
+            ["Enabled"] = true,  -- Version (522) and further
             ["Options"] = {
-                ["Hit"] = "TF2", -- TF2 // Damn // ClashR // Rust // Bozo // CSGO // Boink // Fart // Rage
-                ["Parry"] = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Hit"] = "RUST", -- -- TF2 // RUST //  CSGO // FART // BOINK // RAGE // DAMN // CLASH // BOZO
+                ["Parry"] = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
                 ["Kill"] = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                ["Explosive"] = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Explosive"] = "FART", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
                 ["Nuke"] = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                ["Dash"] = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Dash"] = "RUST", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
                 ["Heal"] = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                ["Parried"] = "RUST", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
             },
         },
 
@@ -127,7 +128,7 @@ getgenv().Settings = {
         },
 
         ["World"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = true,
             ["Options"] = { 
                 ["Skyboxes"] = {
                     ["Enabled"] = true,
@@ -145,7 +146,7 @@ getgenv().Settings = {
                 ["Weapon"] = {
                     ["Enabled"] = true, -- must re equip when spawning, WONT work on weapons like fire axe since they use custom meshes instead of the default ones
                     ["Material"] = "Neon",
-                    ["Color"] = Color3.fromRGB(65, 172, 177),
+                    ["Color"] = Color3.fromRGB(46, 211, 220),
                 },
 
                 ["Fake"] = {
@@ -193,7 +194,7 @@ getgenv().Settings = {
 
         ["Panic"] = {
             ["Enabled"] = false,
-            ["Keybind"] = "P", -- this doesnt check chat, so yeah... i forgot
+            ["Keybind"] = "P",
 
             ["Hold"] = {
                 ["Enabled"] = false, 
